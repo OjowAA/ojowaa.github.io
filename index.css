@@ -113,7 +113,8 @@ h2{
 }
 
 .object{
-  display: block;
+  display: flex;
+  align-text: center;
 }
 
 .imgFrame{
