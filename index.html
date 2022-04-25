@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+  <!--Head for declaring stuff-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Atomic</title>
+
+    <!--Style sheets-->
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="navBar.css" rel="stylesheet" type="text/css" />
+    <link href="list.css" rel="stylesheet" type="text/css" />
+    <link href="content.css" rel="stylesheet" type="text/css" />
+    <link href="header.css" rel="stylesheet" type="text/css" />
+    <link href="particles.css" rel="stylesheet" type="text/css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+  <!--Body-->
+  <body>
+    
+    <!--NavBar-->
+    <ul class="navBar">
+      <!--dont froget to fix links-->
+      <li class="horz"><a href="/index.html">Home</a></li>
+      <li class="horz"><a href="/list.html">List</a></li>
+      <li class="horz"><a href="/game.html">Game</a></li>
+      <li class="horz"><a href="/about.html">About</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="/index.html">Home</a>
+          <a href="/list.html">List</a>
+          <a href="/game.html">Game</a>
+          <a href="/about.html">About</a>
+        </div>
+      </li>
+    </ul>
+
+    <!--Header-->
+    <header>
+      <h1>ATOMIC</h1>
+      <h2>From the <span style="font-size: 21px;">smallest</span> specks of the universe to the <span style="font-size: 60px;">biggest</span> reaches of the galaxy</h2>
+      <div class="arrows">
+        <div class="arrow" style="float: right;"></div>
+        <div class="arrow" style="float: left;"></div>
+      </div>
+      <a class="continue" href="#break">Explore!</a>
+    </header>
+
+    <!--Break-->
+    <div id="break"></div>
+    
+    <!--Main Content-->
+    <section id="sec">
+      
+      <!--Body of information and particles-->
+      <div id="particles-js"></div>
+        
+      <div class="object left" id="I">
+        <div class="imgFrame">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg7bLEuNOdaiDYKI_aA8PqOPggryT19ysMfEOKjPjPl1EuTVxxHLoZYQfVAeTYGsgHjhE&usqp=CAU" alt="Electron">
+          <div class="imgBack" ><a href="/list.html#I">Click to Learn More!</a></div>
+          A Electron
+        </div>  
+      </div>
+
+      <div class="object right" id="II">
+        <div class="imgFrame">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Electric_charge_symbol_positive.svg/1200px-Electric_charge_symbol_positive.svg.png" alt="Proton">
+          <div class="imgBack" ><a href="/list.html#II">Click to Learn More!</a></div>
+          A Proton
+        </div>  
+      </div>
+
+      <div class="object left" id="III">
+        <div class="imgFrame">
+          <img src="https://www.thoughtco.com/thmb/ZgMhaBUNb_tgLh5UJlESbC5BCGY=/3155x3155/smart/filters:no_upscale()/atom-57e1bb583df78c9cce33a106.jpg" alt="Atom">
+          <div class="imgBack" ><a href="/list.html#III">Click to Learn More!</a></div>
+          An Atom
+        </div>  
+      </div>
+
+      <div class="object right" id="IV">
+        <div class="imgFrame">
+          <img src="https://science-et-vie-junior.fr/wp-content/uploads/sevjunior/2021/05/24310_1443234_k3_k1_3328917-1.jpg" alt="Molecule">
+          <div class="imgBack" ><a href="/list.html#IV">Click to Learn More!</a></div>
+          An Molecule
+        </div>  
+      </div>
+      
+    </section>
+    
+    <!--Scripts-->
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    
+  </body>
+</html>

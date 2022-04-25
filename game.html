@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <!--Head for declaring stuff-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Atomic</title>
+
+    <!--Style sheets-->
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="game.css" rel="stylesheet" type="text/css" />
+    <link href="navBar.css" rel="stylesheet" type="text/css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <!--Body-->
+  <body>
+    
+    <!--NavBar-->
+    <ul class="navBar">
+      <!--dont froget to fix links-->
+      <li class="horz"><a href="/index.html">Home</a></li>
+      <li class="horz"><a href="/list.html">List</a></li>
+      <li class="horz"><a href="/game.html">Game</a></li>
+      <li class="horz"><a href="/about.html">About</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="/index.html">Home</a>
+          <a href="/list.html">List</a>
+          <a href="/game.html">Game</a>
+          <a href="/about.html">About</a>
+        </div>
+      </li>
+    </ul>
+
+    <!--Pop up instructions-->
+    <div id="rules">
+      This is a game! The rules are simple, just select which ever one is bigger.
+      <button id="close" type="button" onclick="closeOut()">&#10005</div>
+
+    <div id="curtain">Loading...</div>
+    <div id="overScreen">
+      <span>You Lost</span>
+      <p>But thats okay. Try studing up more or playing again for a new high score.</p>
+      <button type="button" onclick="reset()">Play Again</button>
+      <span id="hs">High Score: 0</span>
+    </div>
+
+    <div id="box">
+      
+      <div class="banner left">
+        <h1 id="leftName">Null</h1>
+        <div class="buttons">
+          <button type="button" id="smaller" onclick="game(-1)">Smaller</button>
+          <button type="button" id="bigger" onclick="game(1)">Bigger</button>
+        </div>
+      </div>
+      
+      <div class="banner right">
+        <h1 id="rightName">Null</h1>
+      </div>
+      
+    </div>
+
+    <!--Scripts-->
+    <script src="game.js"></script>
+
+  </body>
+</html>

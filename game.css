@@ -1,0 +1,144 @@
+body{
+  overflow: hidden;
+}
+
+.indicator{
+  width: 150px;
+  height: 150px;
+  color: white;
+  background-color: #ababab;
+  border-radius: 50%;
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#curtain{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 120vh;
+  left: 0px;
+  padding: 20% 20%;
+  font-size: 50px;
+  color: white;
+  animation-duration: 1.5s;
+  background-color: #000000;
+  animation-name: "goingDown";
+  z-index: 5;
+}
+
+#box{
+  display: flex;
+  height: 100vh;
+}
+
+.banner{
+  text-align: center
+  flex: 1;
+  width: 50%;
+  background: #7d7d7d;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  z-index: 0;
+  padding: 20px;
+  text-shadow: 0px 0px 9px #596f9b, 0px 0px 13px #23314d;
+  font-size: 50px;
+  color: white;
+}
+
+h1{
+  text-align: center;
+  width: 100%;
+}
+
+rightName, leftName{
+}
+
+#rules{
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #595959;
+  color: #e0e0e0;
+  max-width: 400px;
+  opacity: 0.8;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+#close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: translate(-50%,-50%);
+}
+
+.buttons{
+  width: 100%;
+  height: 15%;
+  display: flex;
+}
+
+button{
+  flex: 1;
+  background: #464f58;
+  color: #e0e0e0;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+button:hover{
+  background: #71c181;
+  border-style: inset;
+}
+
+@keyframes goingUp {
+  from {
+    top: 120vh;
+  }
+
+  to {
+    top: 76px;
+  }
+}
+
+@keyframes goingDown {
+  from {
+    top: 76px;
+  }
+  to {
+    top: 120vh;
+  }
+}
+
+#overScreen{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 120vh;
+  left: 0px;
+  text-align: center;
+  padding: 10% 30px;
+  padding-right: 60px;
+  font-size: 50px;
+  color: white;
+  animation-duration: 1.5s;
+  background-color: #4389e5;
+  z-index: 6;
+}
+
+p{
+  font-size: 30px;
+  color: #c7c7c7;
+}
+
+span{
+  text-decoration: underline;
+}
