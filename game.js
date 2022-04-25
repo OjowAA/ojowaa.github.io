@@ -12,6 +12,8 @@ const leftName = document.getElementById("leftName");
 const curtain = document.getElementById("curtain");
 const hsText = document.getElementById("hs");
 const overScreen = document.getElementById("overScreen");
+const bannerRight = document.getElementById("bannerRight");
+const bannerLeft = document.getElementById("bannerLeft");
 
 window.onload = function() {
   setup();
@@ -20,6 +22,7 @@ window.onload = function() {
 function setup(){
   right = Math.floor(Math.random()*list.length);
   rightName.innerHTML = list[right];
+  bannerRight.style.backgroundImage = list[right]+".jpg";
   
   let temp = Math.floor(Math.random()*list.length);
   while (temp == right){
@@ -27,6 +30,7 @@ function setup(){
   }
   left = temp;
   leftName.innerHTML = list[left];
+  bannerLeft.style.backgroundImage = list[left]+".jpg";
 }
 
 function game(input){
