@@ -22,7 +22,7 @@ window.onload = function() {
 function setup(){
   right = Math.floor(Math.random()*list.length);
   rightName.innerHTML = list[right];
-  bannerRight.style.backgroundImage = "url(\"" + "list[right]" + ".jpg\")";
+  bannerRight.style.backgroundImage = "url(\"" + list[right] + ".jpg\")";
   
   let temp = Math.floor(Math.random()*list.length);
   while (temp == right){
@@ -30,7 +30,7 @@ function setup(){
   }
   left = temp;
   leftName.innerHTML = list[left];
-  bannerLeft..style.backgroundImage = "url(\"" + "list[left]" + ".jpg\")";
+  bannerLeft..style.backgroundImage = "url(\"" + list[left] + ".jpg\")";
 }
 
 function game(input){
