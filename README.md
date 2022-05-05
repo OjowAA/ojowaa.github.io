@@ -1,3 +1,3 @@
 # ojowaa.github.io
 
-Website made by Andre A, Link - [ojowaa.github.io/index.html](ojowaa.github.io/index.html)
+Website made by Andre A, Link - [ojowaa.github.io](https://ojowaa.github.io/index.html)
