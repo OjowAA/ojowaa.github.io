@@ -2,7 +2,7 @@ function closeOut(){
   document.getElementById("rules").style.display = "none";
 }
 
-const list = ["Quark", "Boson", "Photon", "Electron", "Proton", "Hydrogen_Atom", "Molecule", "DNA", "Corona_Virus", "Sperm_Cell", "Red_Blood_Cell", "Skin_Cell", "Human_Egg", "Apple", "Human", "Blue_Whale", "Mount_Everest", "Astroid", "Moon", "Earth", "Sun", "Scuti", "Solar_System", "Milky_Way", "Universe"];
+const list = ["Quark", "Boson", "Photon", "Electron", "Proton", "hydrogen_atom", "Molecule", "dna", "corona_virus", "sperm_cell", "red_blood_cell", "skin_cell", "human_egg", "Apple", "Human", "blue_whale", "mount_everest", "Astroid", "Moon", "Earth", "Sun", "scuti", "aolar_system", "milky_way", "Universe"];
 var left = 0;
 var right = 0;
 var hs = 0;
