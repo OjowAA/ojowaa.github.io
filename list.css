@@ -1,17 +1,22 @@
+body{
+  background-color: #0d0c1c;
+}
+
 .description{
   margin: 1cm;
   padding: 0.5cm;
-  background-color: #292b42;
+  padding-left: 0;
+  background-color: #161b33;
 }
 
 .snapLeft{
   margin-left: 0cm;
-  border-right: 25px solid #b3afd0;
+  border-right: 32px solid #b3afd0;
 }
 
 .snapRight{
   margin-right: 0cm;
-  border-left: 25px solid #b3afd0;
+  border-left: 32px solid #b3afd0;
 }
 
 .rightColumn{
@@ -24,6 +29,10 @@
 .leftColumn{
   width: 40%;
   float: left;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
 img{
@@ -32,19 +41,19 @@ img{
   width: 82%;
   max-width: 300px;
   border-radius: 7px;
-  box-shadow: -10px 10px 8px #060416;
+  box-shadow: 0px 10px 10px #060416;
 }
 
 .subText{
   padding: 0.7cm;
   margin-top: 0.4cm;
   margin-bottom: 0.4cm;
-  color: #bababa;
-  border-radius: 15px;
+  color: #b3afd0;
+  border-radius: 9px;
   font-size: 26px;
   box-sizing: border-box;
-  box-shadow: -15px 15px 6px #0d0c0c;
-  background-color: #413b4e;
+  box-shadow: 0px 10px 10px #0d0c0c;
+  background-color: #474973;
 }
 
 .nextArr{
@@ -70,5 +79,5 @@ img{
     float: none;
     width: 100%;
     justify-content: center;
-    
   }
+}
